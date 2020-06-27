@@ -2,6 +2,7 @@ package unsw.venues;
 
 import java.util.ArrayList;
 import java.time.LocalDate;
+import org.json.JSONArray;
 
 public class Room {
     private String name;
@@ -49,7 +50,6 @@ public class Room {
                 return counter;
             }
         }
-        this.reservedList.add(newRes);
         counter--;
         return counter;
     }
@@ -58,5 +58,13 @@ public class Room {
         this.reservedList.removeIf(a -> a.getID().equals(id) == true);
     }
 
+    public JSONArray loadReservedList() {
+        JSONArray resList = new JSONArray();
+        for (Reservation res : this.reservedList) {
+            resList.put(res.resInfo());
+        }
+
+        return resList;
+    }
 
 }

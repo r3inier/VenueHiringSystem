@@ -88,11 +88,13 @@ public class VenueHireSystem {
             // 2. then step 3 of "change" command
             break;
         case "list":
-            // String venue2 = json.getString("venue");
+            String venue2 = json.getString("venue");
             
             // loop through venue's roomList and output
             // reservedList for each and an empty ArrayList
-            // if nothing in it
+            Venue venueFound = findVenue(venue2);
+            venueFound.loadRooms();
+            break;
         }
     }
 
@@ -152,6 +154,7 @@ public class VenueHireSystem {
                 }
                 // Adds the reservations in respective rooms
                 for (Reservation r: bufferReservationList) {
+                    System.out.println(r.getID());
                     r.getRoom().addReservation(r);
                 }
                 result.put("rooms", rooms);
@@ -177,6 +180,17 @@ public class VenueHireSystem {
         JSONObject result = request(id, start, end, small, medium, large);
 
         return result;
+    }
+
+    public Venue findVenue(String venueName) {
+        Venue venResult = new Venue("lol");
+        for (Venue v: this.venueList) {
+            if (v.getVenueName().equals(venueName)) {
+                venResult = v;
+                break;
+            }
+        }
+        return venResult; 
     }
 
     public static void main(String[] args) {

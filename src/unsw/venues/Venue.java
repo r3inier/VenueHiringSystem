@@ -2,6 +2,7 @@ package unsw.venues;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import org.json.JSONObject;
 
 
 
@@ -119,6 +120,15 @@ public class Venue {
     public void emptyOutVenue(String id) {
         for (Room r :this.roomList) {
             r.emptyOutRooms(id);
+        }
+    }
+
+    public void loadRooms() {
+        JSONObject result = new JSONObject();
+        for (Room r : this.getRoomList()) {
+            result.put("reservations", r.loadReservedList());
+            result.put("room", r.getRoomName());
+            System.out.println(result.toString(2));
         }
     }
     
