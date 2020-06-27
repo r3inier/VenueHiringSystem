@@ -76,21 +76,33 @@ public class Venue {
                     bufferReservationList.add(newRes);
                     tempSmall--;
                 } else {
-                    bufferReservationList = roomCheck.checkAvailRes(start, end, resRequest, bufferReservationList, newRes);
+                    int comparison = tempSmall;
+                    tempSmall = roomCheck.checkAvailRes(start, end, resRequest, tempSmall, newRes);
+                    if (tempSmall != comparison) {
+                        bufferReservationList.add(newRes);
+                    }
                 }
             } /* Medium */else if (roomCheck.getSize().equals("medium") && tempMed > 0) {
                 if (roomCheck.getReservedList().isEmpty() == true) {
                     bufferReservationList.add(newRes);
                     tempMed--;
                 } else {
-                    bufferReservationList = roomCheck.checkAvailRes(start, end, resRequest, bufferReservationList, newRes);
+                    int comparison1 = tempMed;
+                    tempMed = roomCheck.checkAvailRes(start, end, resRequest, tempMed, newRes);
+                    if (tempMed != comparison1) {
+                        bufferReservationList.add(newRes);
+                    }
                 }
             } /* Large */ else if (roomCheck.getSize().equals("large") && tempLarge > 0) {
                 if (roomCheck.getReservedList().isEmpty() == true) {
                     bufferReservationList.add(newRes);
                     tempLarge--;
                 } else {
-                    bufferReservationList = roomCheck.checkAvailRes(start, end, resRequest, bufferReservationList, newRes);
+                    int comparison = tempLarge;
+                    tempLarge = roomCheck.checkAvailRes(start, end, resRequest, tempLarge, newRes);
+                    if (tempLarge != comparison) {
+                        bufferReservationList.add(newRes);
+                    }
                 }   
             } 
             
@@ -100,8 +112,6 @@ public class Venue {
             }  
             
         }
-
-        emptyOutVenue(resRequest.getID());
 
         return new ArrayList<>();
     }

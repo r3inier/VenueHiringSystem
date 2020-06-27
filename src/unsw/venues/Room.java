@@ -39,26 +39,23 @@ public class Room {
         reservedList.remove(reservedList.size() - 1);
     }
 
-    public ArrayList<Reservation> checkAvailRes(LocalDate start, LocalDate end, ReservationRequest resRequest, ArrayList<Reservation> bufferReservationList, Reservation newRes) {
+    public int checkAvailRes(LocalDate start, LocalDate end, ReservationRequest resRequest, int counter, Reservation newRes) {
         for (Reservation resCheck : this.getReservedList()) {
             if (
-                (resCheck.getStartDate().compareTo(start) < 0 && resCheck.getEndDate().compareTo(start) < 0) || 
-                (resCheck.getStartDate().compareTo(end) > 0 && resCheck.getEndDate().compareTo(end) > 0)
+                (resCheck.getStartDate().compareTo(start) >= 0 && resCheck.getStartDate().compareTo(end) <= 0) || 
+                (resCheck.getEndDate().compareTo(start) >= 0 && resCheck.getEndDate().compareTo(end) <= 0) ||
+                (resCheck.getStartDate().compareTo(start) <= 0 && resCheck.getEndDate().compareTo(end) >= 0)
             ) {
-                bufferReservationList.add(newRes);
-                this.reservedList.add(newRes);
-                return bufferReservationList;
+                return counter;
             }
         }
-        return bufferReservationList;
+        this.reservedList.add(newRes);
+        counter--;
+        return counter;
     }
 
     public void emptyOutRooms(String id) {
-        for (Reservation r : this.reservedList) {
-            if (r.getRoomName().equals(id)) {
-                this.reservedList.remove(r);
-            }
-        }
+        this.reservedList.removeIf(a -> a.getID().equals(id) == true);
     }
 
 

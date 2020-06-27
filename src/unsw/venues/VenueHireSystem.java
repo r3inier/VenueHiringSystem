@@ -63,13 +63,13 @@ public class VenueHireSystem {
             break;
 
         case "change":
-            /* String id2 = json.getString("id");
+            String id2 = json.getString("id");
             LocalDate start2 = LocalDate.parse(json.getString("start"));
             LocalDate end2 = LocalDate.parse(json.getString("end"));
             int small2 = json.getInt("small");
             int medium2 = json.getInt("medium");
-            int large2 = json.getInt("large"); */
-        
+            int large2 = json.getInt("large");
+            JSONObject result2 = change(id2, start2, end2, small2, medium2, large2);
             // 1. loop through each venue then check room's
             // reservedList and check each reservation with
             // same id then delete that from reservedList
@@ -78,9 +78,11 @@ public class VenueHireSystem {
             // 2. then use request command to add new reservation
             // (if possible)
             // 3. do System.out.println(blahblah)
+            System.out.println(result2.toString(2));
             break;
         case "cancel":
-            // String id3 = json.getString("id");
+            String id3 = json.getString("id");
+            cancel(id3);
 
             // 1. same as step 1 in "change" command
             // 2. then step 3 of "change" command
@@ -95,14 +97,14 @@ public class VenueHireSystem {
     }
 
     private void addRoom(String venue, String room, String size) {
-        // TODO Process the room command
-        // 1. create a room in room class with size given
-        // 2. find venue in list (if not then create new venue)
-        // 2. go into venue object then append room to roomList
+        // 1. Create a room in room class with size given
+        // 2. Check if list of venues is empty
+        // 3. If not empty, find venue in list (if not  in list then create new venue)
+        // 4. Go into venue object then append room to roomList
         Room r = new Room(room, size);
 
         int counter = 0;
-
+        // empty venueList case
         if (this.venueList.isEmpty() == true) {
             Venue newV = new Venue(venue);
             this.venueList.add(newV);
@@ -139,15 +141,16 @@ public class VenueHireSystem {
                 bufferReservationList = vCheck.checkVenue(start, end, small, medium, large, resRequest);
             }
             
-            // checks if all rooms were successfully assigned
-            // CASE OF IF SUCCESSFUL (change up)
+            // Checks if all rooms were successfully assigned
             if (bufferReservationList.isEmpty() == false) {
                 result.put("venue", vCheck.getVenueName());
                 result.put("status", "success");
                 JSONArray rooms = new JSONArray();
+                // Adds rooms into the JSONArray
                 for (Reservation rsve: bufferReservationList) {
                     rooms.put(rsve.getRoomName());
                 }
+                // Adds the reservations in respective rooms
                 for (Reservation r: bufferReservationList) {
                     r.getRoom().addReservation(r);
                 }
@@ -158,6 +161,21 @@ public class VenueHireSystem {
 
         // if it reaches here, it is rejected
         result.put("status", "rejected");
+        return result;
+    }
+
+    public void cancel(String id) {
+        for (Venue v : this.venueList) {
+            v.emptyOutVenue(id);
+        }
+    }
+
+    public JSONObject change(String id, LocalDate start, LocalDate end,
+    int small, int medium, int large) {
+        
+        cancel(id);
+        JSONObject result = request(id, start, end, small, medium, large);
+
         return result;
     }
 
