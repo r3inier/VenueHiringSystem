@@ -175,10 +175,15 @@ public class VenueHireSystem {
     public JSONObject change(String id, LocalDate start, LocalDate end,
     int small, int medium, int large) {
         
-        cancel(id);
-        JSONObject result = request(id, start, end, small, medium, large);
+        if (requestCheck(id, start, end, small, medium, large) == true) {
+            cancel(id);
+            JSONObject result = request(id, start, end, small, medium, large);
+            return result;
+        } 
 
-        return result;
+        JSONObject result2 = request(id, start, end, small, medium, large);
+
+        return result2;
     }
 
     public Venue findVenue(String venueName) {
@@ -206,6 +211,27 @@ public class VenueHireSystem {
         }
         sc.close();
     }
+
+    public boolean requestCheck(String id, LocalDate start, LocalDate end,
+    int small, int medium, int large) {
+        ReservationRequest resRequest = new ReservationRequest(id, start, end, small, medium, large);
+
+        for (Venue vCheck : this.venueList) {
+            ArrayList<Reservation> bufferReservationList = new ArrayList<>();
+
+            if (vCheck.getSmallMax() >= small && vCheck.getMediumMax() >= medium && vCheck.getLargeMax() >= large) {
+                // Checks every room in the venue to see if we can fit all rooms inside
+                bufferReservationList = vCheck.checkVenue(start, end, small, medium, large, resRequest);
+            }
+            
+            // Checks if all rooms were successfully assigned
+            if (bufferReservationList.isEmpty() == false) {
+                return true;
+            }
+        }
+
+        return false;
+    }   
 
 }
 

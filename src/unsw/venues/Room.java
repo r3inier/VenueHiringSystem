@@ -56,7 +56,8 @@ public class Room {
             if (
                 (resCheck.getStartDate().compareTo(start) >= 0 && resCheck.getStartDate().compareTo(end) <= 0) || 
                 (resCheck.getEndDate().compareTo(start) >= 0 && resCheck.getEndDate().compareTo(end) <= 0) ||
-                (resCheck.getStartDate().compareTo(start) <= 0 && resCheck.getEndDate().compareTo(end) >= 0)
+                (resCheck.getStartDate().compareTo(start) <= 0 && resCheck.getEndDate().compareTo(end) >= 0) ||
+                (resCheck.getID().equals(resRequest.getID()) == true)
             ) {
                 return counter;
             }
@@ -73,14 +74,15 @@ public class Room {
         JSONArray resList = new JSONArray();
         for (Reservation res : this.reservedList) {
             resList.put(res.resInfo());
-            resList.put(res.getRoom());
         }
 
         return resList;
     }
 
     public void sortList() {
-        Collections.sort(this.reservedList, (a, b) -> a.getStartDate().compareTo(b.getStartDate()));
+        if (this.reservedList.size() > 1) {
+            Collections.sort(this.reservedList, (a, b) -> a.getStartDate().compareTo(b.getStartDate()));
+        }
     }
 
 }
