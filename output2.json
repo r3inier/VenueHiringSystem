@@ -1,0 +1,243 @@
+{
+  "venue": "House",
+  "rooms": [
+    "Bedroom1",
+    "Bedroom2",
+    "Bedroom3",
+    "Bedroom4",
+    "Kitchen1",
+    "Kitchen2",
+    "Walk-In Wardrobe",
+    "Garage1",
+    "Garage2",
+    "Pantry",
+    "Pool Room",
+    "Bathroom"
+  ],
+  "status": "success"
+}
+{"status": "rejected"}
+{"status": "rejected"}
+[
+  {
+    "reservations": [{
+      "start": "2019-03-26",
+      "end": "2019-03-28",
+      "id": "Sleepover"
+    }],
+    "room": "Bedroom1"
+  },
+  {
+    "reservations": [{
+      "start": "2019-03-26",
+      "end": "2019-03-28",
+      "id": "Sleepover"
+    }],
+    "room": "Bedroom2"
+  },
+  {
+    "reservations": [{
+      "start": "2019-03-26",
+      "end": "2019-03-28",
+      "id": "Sleepover"
+    }],
+    "room": "Bedroom3"
+  },
+  {
+    "reservations": [{
+      "start": "2019-03-26",
+      "end": "2019-03-28",
+      "id": "Sleepover"
+    }],
+    "room": "Bedroom4"
+  },
+  {
+    "reservations": [{
+      "start": "2019-03-26",
+      "end": "2019-03-28",
+      "id": "Sleepover"
+    }],
+    "room": "Kitchen1"
+  },
+  {
+    "reservations": [{
+      "start": "2019-03-26",
+      "end": "2019-03-28",
+      "id": "Sleepover"
+    }],
+    "room": "Kitchen2"
+  },
+  {
+    "reservations": [{
+      "start": "2019-03-26",
+      "end": "2019-03-28",
+      "id": "Sleepover"
+    }],
+    "room": "Walk-In Wardrobe"
+  },
+  {
+    "reservations": [{
+      "start": "2019-03-26",
+      "end": "2019-03-28",
+      "id": "Sleepover"
+    }],
+    "room": "Garage1"
+  },
+  {
+    "reservations": [{
+      "start": "2019-03-26",
+      "end": "2019-03-28",
+      "id": "Sleepover"
+    }],
+    "room": "Garage2"
+  },
+  {
+    "reservations": [{
+      "start": "2019-03-26",
+      "end": "2019-03-28",
+      "id": "Sleepover"
+    }],
+    "room": "Pantry"
+  },
+  {
+    "reservations": [{
+      "start": "2019-03-26",
+      "end": "2019-03-28",
+      "id": "Sleepover"
+    }],
+    "room": "Pool Room"
+  },
+  {
+    "reservations": [{
+      "start": "2019-03-26",
+      "end": "2019-03-28",
+      "id": "Sleepover"
+    }],
+    "room": "Bathroom"
+  }
+]
+{
+  "venue": "House",
+  "rooms": [
+    "Bedroom1",
+    "Bedroom2",
+    "Bedroom3",
+    "Bedroom4",
+    "Kitchen1",
+    "Kitchen2",
+    "Walk-In Wardrobe",
+    "Garage1",
+    "Garage2",
+    "Pantry",
+    "Pool Room",
+    "Bathroom",
+    "Bathroom2"
+  ],
+  "status": "success"
+}
+[
+  {
+    "reservations": [{
+      "start": "2019-03-30",
+      "end": "2019-03-30",
+      "id": "Raid"
+    }],
+    "room": "Bedroom1"
+  },
+  {
+    "reservations": [{
+      "start": "2019-03-30",
+      "end": "2019-03-30",
+      "id": "Raid"
+    }],
+    "room": "Bedroom2"
+  },
+  {
+    "reservations": [{
+      "start": "2019-03-30",
+      "end": "2019-03-30",
+      "id": "Raid"
+    }],
+    "room": "Bedroom3"
+  },
+  {
+    "reservations": [{
+      "start": "2019-03-30",
+      "end": "2019-03-30",
+      "id": "Raid"
+    }],
+    "room": "Bedroom4"
+  },
+  {
+    "reservations": [{
+      "start": "2019-03-30",
+      "end": "2019-03-30",
+      "id": "Raid"
+    }],
+    "room": "Kitchen1"
+  },
+  {
+    "reservations": [{
+      "start": "2019-03-30",
+      "end": "2019-03-30",
+      "id": "Raid"
+    }],
+    "room": "Kitchen2"
+  },
+  {
+    "reservations": [{
+      "start": "2019-03-30",
+      "end": "2019-03-30",
+      "id": "Raid"
+    }],
+    "room": "Walk-In Wardrobe"
+  },
+  {
+    "reservations": [{
+      "start": "2019-03-30",
+      "end": "2019-03-30",
+      "id": "Raid"
+    }],
+    "room": "Garage1"
+  },
+  {
+    "reservations": [{
+      "start": "2019-03-30",
+      "end": "2019-03-30",
+      "id": "Raid"
+    }],
+    "room": "Garage2"
+  },
+  {
+    "reservations": [{
+      "start": "2019-03-30",
+      "end": "2019-03-30",
+      "id": "Raid"
+    }],
+    "room": "Pantry"
+  },
+  {
+    "reservations": [{
+      "start": "2019-03-30",
+      "end": "2019-03-30",
+      "id": "Raid"
+    }],
+    "room": "Pool Room"
+  },
+  {
+    "reservations": [{
+      "start": "2019-03-30",
+      "end": "2019-03-30",
+      "id": "Raid"
+    }],
+    "room": "Bathroom"
+  },
+  {
+    "reservations": [{
+      "start": "2019-03-30",
+      "end": "2019-03-30",
+      "id": "Raid"
+    }],
+    "room": "Bathroom2"
+  }
+]

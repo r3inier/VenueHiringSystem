@@ -1,0 +1,13 @@
+// Multiple "change" commands
+{ "command": "room", "venue": "Cemetery", "room": "Guard Room", "size": "small" }
+{ "command": "request", "id": "Inspection", "start": "2019-03-25", "end": "2019-03-26", "small": 1, "medium": 0, "large": 0 }
+{ "command": "change", "id": "Inspection", "start": "2019-03-27", "end": "2019-03-29", "small": 1, "medium": 0, "large": 0 }
+{ "command": "change", "id": "Inspection", "start": "2019-03-28", "end": "2019-03-30", "small": 1, "medium": 0, "large": 0 }
+{ "command": "change", "id": "Inspection", "start": "2019-04-27", "end": "2019-06-21", "small": 1, "medium": 0, "large": 0 }
+{ "command": "change", "id": "Inspection", "start": "2019-03-27", "end": "2019-03-29", "small": 1, "medium": 0, "large": 0 }
+{ "command": "list", "venue": "Cemetery" }
+{ "command": "cancel", "id": "Inspection" }
+{ "command": "list", "venue": "Cemetery" }
+
+
+

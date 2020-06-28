@@ -1,0 +1,396 @@
+[
+  {
+    "reservations": [],
+    "room": "KFC"
+  },
+  {
+    "reservations": [],
+    "room": "McDonalds"
+  },
+  {
+    "reservations": [],
+    "room": "Oporto"
+  }
+]
+[
+  {
+    "reservations": [],
+    "room": "KFC"
+  },
+  {
+    "reservations": [],
+    "room": "McDonalds"
+  },
+  {
+    "reservations": [],
+    "room": "Oporto"
+  }
+]
+[
+  {
+    "reservations": [],
+    "room": "KFC"
+  },
+  {
+    "reservations": [],
+    "room": "McDonalds"
+  },
+  {
+    "reservations": [],
+    "room": "Oporto"
+  }
+]
+{
+  "venue": "Food Court",
+  "rooms": [
+    "KFC",
+    "McDonalds",
+    "Oporto"
+  ],
+  "status": "success"
+}
+[
+  {
+    "reservations": [{
+      "start": "2019-05-25",
+      "end": "2019-05-25",
+      "id": "John's Birthday Party"
+    }],
+    "room": "KFC"
+  },
+  {
+    "reservations": [{
+      "start": "2019-05-25",
+      "end": "2019-05-25",
+      "id": "John's Birthday Party"
+    }],
+    "room": "McDonalds"
+  },
+  {
+    "reservations": [{
+      "start": "2019-05-25",
+      "end": "2019-05-25",
+      "id": "John's Birthday Party"
+    }],
+    "room": "Oporto"
+  }
+]
+[
+  {
+    "reservations": [],
+    "room": "KFC"
+  },
+  {
+    "reservations": [],
+    "room": "McDonalds"
+  },
+  {
+    "reservations": [],
+    "room": "Oporto"
+  }
+]
+[
+  {
+    "reservations": [],
+    "room": "KFC"
+  },
+  {
+    "reservations": [],
+    "room": "McDonalds"
+  },
+  {
+    "reservations": [],
+    "room": "Oporto"
+  }
+]
+{
+  "venue": "Food Court",
+  "rooms": [
+    "KFC",
+    "McDonalds",
+    "Oporto"
+  ],
+  "status": "success"
+}
+[
+  {
+    "reservations": [
+      {
+        "start": "2019-05-24",
+        "end": "2019-03-26",
+        "id": "Casual Outing"
+      },
+      {
+        "start": "2019-05-25",
+        "end": "2019-05-25",
+        "id": "John's Birthday Party"
+      }
+    ],
+    "room": "KFC"
+  },
+  {
+    "reservations": [
+      {
+        "start": "2019-05-24",
+        "end": "2019-03-26",
+        "id": "Casual Outing"
+      },
+      {
+        "start": "2019-05-25",
+        "end": "2019-05-25",
+        "id": "John's Birthday Party"
+      }
+    ],
+    "room": "McDonalds"
+  },
+  {
+    "reservations": [
+      {
+        "start": "2019-05-24",
+        "end": "2019-03-26",
+        "id": "Casual Outing"
+      },
+      {
+        "start": "2019-05-25",
+        "end": "2019-05-25",
+        "id": "John's Birthday Party"
+      }
+    ],
+    "room": "Oporto"
+  }
+]
+[
+  {
+    "reservations": [],
+    "room": "KFC"
+  },
+  {
+    "reservations": [],
+    "room": "McDonalds"
+  },
+  {
+    "reservations": [],
+    "room": "Oporto"
+  }
+]
+[
+  {
+    "reservations": [],
+    "room": "KFC"
+  },
+  {
+    "reservations": [],
+    "room": "McDonalds"
+  },
+  {
+    "reservations": [],
+    "room": "Oporto"
+  }
+]
+{
+  "venue": "Outdoor Stalls",
+  "rooms": [
+    "KFC",
+    "McDonalds",
+    "Oporto"
+  ],
+  "status": "success"
+}
+[
+  {
+    "reservations": [
+      {
+        "start": "2019-05-24",
+        "end": "2019-03-26",
+        "id": "Casual Outing"
+      },
+      {
+        "start": "2019-05-25",
+        "end": "2019-05-25",
+        "id": "John's Birthday Party"
+      }
+    ],
+    "room": "KFC"
+  },
+  {
+    "reservations": [
+      {
+        "start": "2019-05-24",
+        "end": "2019-03-26",
+        "id": "Casual Outing"
+      },
+      {
+        "start": "2019-05-25",
+        "end": "2019-05-25",
+        "id": "John's Birthday Party"
+      }
+    ],
+    "room": "McDonalds"
+  },
+  {
+    "reservations": [
+      {
+        "start": "2019-05-24",
+        "end": "2019-03-26",
+        "id": "Casual Outing"
+      },
+      {
+        "start": "2019-05-25",
+        "end": "2019-05-25",
+        "id": "John's Birthday Party"
+      }
+    ],
+    "room": "Oporto"
+  }
+]
+[
+  {
+    "reservations": [{
+      "start": "2019-05-25",
+      "end": "2019-05-25",
+      "id": "Vanessa's Birthday Party"
+    }],
+    "room": "KFC"
+  },
+  {
+    "reservations": [{
+      "start": "2019-05-25",
+      "end": "2019-05-25",
+      "id": "Vanessa's Birthday Party"
+    }],
+    "room": "McDonalds"
+  },
+  {
+    "reservations": [{
+      "start": "2019-05-25",
+      "end": "2019-05-25",
+      "id": "Vanessa's Birthday Party"
+    }],
+    "room": "Oporto"
+  }
+]
+[
+  {
+    "reservations": [],
+    "room": "KFC"
+  },
+  {
+    "reservations": [],
+    "room": "McDonalds"
+  },
+  {
+    "reservations": [],
+    "room": "Oporto"
+  }
+]
+{
+  "venue": "Food Court",
+  "rooms": [
+    "KFC",
+    "McDonalds",
+    "Oporto"
+  ],
+  "status": "success"
+}
+[
+  {
+    "reservations": [
+      {
+        "start": "2019-05-24",
+        "end": "2019-03-26",
+        "id": "Casual Outing"
+      },
+      {
+        "start": "2019-05-25",
+        "end": "2019-05-25",
+        "id": "John's Birthday Party"
+      },
+      {
+        "start": "2019-05-28",
+        "end": "2019-05-28",
+        "id": "Vanessa's Birthday Party"
+      }
+    ],
+    "room": "KFC"
+  },
+  {
+    "reservations": [
+      {
+        "start": "2019-05-24",
+        "end": "2019-03-26",
+        "id": "Casual Outing"
+      },
+      {
+        "start": "2019-05-25",
+        "end": "2019-05-25",
+        "id": "John's Birthday Party"
+      },
+      {
+        "start": "2019-05-28",
+        "end": "2019-05-28",
+        "id": "Vanessa's Birthday Party"
+      }
+    ],
+    "room": "McDonalds"
+  },
+  {
+    "reservations": [
+      {
+        "start": "2019-05-24",
+        "end": "2019-03-26",
+        "id": "Casual Outing"
+      },
+      {
+        "start": "2019-05-25",
+        "end": "2019-05-25",
+        "id": "John's Birthday Party"
+      },
+      {
+        "start": "2019-05-28",
+        "end": "2019-05-28",
+        "id": "Vanessa's Birthday Party"
+      }
+    ],
+    "room": "Oporto"
+  }
+]
+[
+  {
+    "reservations": [{
+      "start": "2019-05-25",
+      "end": "2019-05-25",
+      "id": "Vanessa's Birthday Party"
+    }],
+    "room": "KFC"
+  },
+  {
+    "reservations": [{
+      "start": "2019-05-25",
+      "end": "2019-05-25",
+      "id": "Vanessa's Birthday Party"
+    }],
+    "room": "McDonalds"
+  },
+  {
+    "reservations": [{
+      "start": "2019-05-25",
+      "end": "2019-05-25",
+      "id": "Vanessa's Birthday Party"
+    }],
+    "room": "Oporto"
+  }
+]
+[
+  {
+    "reservations": [],
+    "room": "KFC"
+  },
+  {
+    "reservations": [],
+    "room": "McDonalds"
+  },
+  {
+    "reservations": [],
+    "room": "Oporto"
+  }
+]

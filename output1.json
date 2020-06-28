@@ -1,0 +1,37 @@
+{
+  "venue": "Cemetery",
+  "rooms": ["Guard Room"],
+  "status": "success"
+}
+{
+  "venue": "Cemetery",
+  "rooms": ["Guard Room"],
+  "status": "success"
+}
+{
+  "venue": "Cemetery",
+  "rooms": ["Guard Room"],
+  "status": "success"
+}
+{
+  "venue": "Cemetery",
+  "rooms": ["Guard Room"],
+  "status": "success"
+}
+{
+  "venue": "Cemetery",
+  "rooms": ["Guard Room"],
+  "status": "success"
+}
+[{
+  "reservations": [{
+    "start": "2019-03-27",
+    "end": "2019-03-29",
+    "id": "Inspection"
+  }],
+  "room": "Guard Room"
+}]
+[{
+  "reservations": [],
+  "room": "Guard Room"
+}]

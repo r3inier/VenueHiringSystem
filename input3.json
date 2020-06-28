@@ -1,0 +1,28 @@
+{ "command": "room", "venue": "Food Court", "room": "KFC", "size": "medium" }
+{ "command": "room", "venue": "Food Court", "room": "McDonalds", "size": "large" }
+{ "command": "room", "venue": "Food Court", "room": "Oporto", "size": "small" }
+{ "command": "room", "venue": "Outdoor Stalls", "room": "KFC", "size": "medium" }
+{ "command": "room", "venue": "Outdoor Stalls", "room": "McDonalds", "size": "large" }
+{ "command": "room", "venue": "Outdoor Stalls", "room": "Oporto", "size": "small" }
+{ "command": "room", "venue": "CEO Building", "room": "KFC", "size": "medium" }
+{ "command": "room", "venue": "CEO Building", "room": "McDonalds", "size": "large" }
+{ "command": "room", "venue": "CEO Building", "room": "Oporto", "size": "small" }
+{ "command": "list", "venue": "Food Court" }
+{ "command": "list", "venue": "Outdoor Stalls" }
+{ "command": "list", "venue": "CEO Building" }
+{ "command": "request", "id": "John's Birthday Party", "start": "2019-05-25", "end": "2019-05-25", "small": 1, "medium": 1, "large": 1 }
+{ "command": "list", "venue": "Food Court" }
+{ "command": "list", "venue": "Outdoor Stalls" }
+{ "command": "list", "venue": "CEO Building" }
+{ "command": "request", "id": "Casual Outing", "start": "2019-05-24", "end": "2019-03-26", "small": 1, "medium": 1, "large": 1 }
+{ "command": "list", "venue": "Food Court" }
+{ "command": "list", "venue": "Outdoor Stalls" }
+{ "command": "list", "venue": "CEO Building" }
+{ "command": "request", "id": "Vanessa's Birthday Party", "start": "2019-05-25", "end": "2019-05-25", "small": 1, "medium": 1, "large": 1 }
+{ "command": "list", "venue": "Food Court" }
+{ "command": "list", "venue": "Outdoor Stalls" }
+{ "command": "list", "venue": "CEO Building" }
+{ "command": "request", "id": "Vanessa's Birthday Party", "start": "2019-05-28", "end": "2019-05-28", "small": 1, "medium": 1, "large": 1 }
+{ "command": "list", "venue": "Food Court" }
+{ "command": "list", "venue": "Outdoor Stalls" }
+{ "command": "list", "venue": "CEO Building" }

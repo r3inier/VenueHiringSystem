@@ -1,0 +1,23 @@
+{ "command": "room", "venue": "House", "room": "Bedroom1", "size": "large" }
+{ "command": "room", "venue": "House", "room": "Bedroom2", "size": "large" }
+{ "command": "room", "venue": "House", "room": "Bedroom3", "size": "large" }
+{ "command": "room", "venue": "House", "room": "Bedroom4", "size": "large" }
+{ "command": "room", "venue": "House", "room": "Kitchen1", "size": "large" }
+{ "command": "room", "venue": "House", "room": "Kitchen2", "size": "large" }
+{ "command": "room", "venue": "House", "room": "Walk-In Wardrobe", "size": "large" }
+{ "command": "room", "venue": "House", "room": "Garage1", "size": "large" }
+{ "command": "room", "venue": "House", "room": "Garage2", "size": "large" }
+{ "command": "room", "venue": "House", "room": "Pantry", "size": "large" }
+{ "command": "room", "venue": "House", "room": "Pool Room", "size": "small" }
+{ "command": "room", "venue": "House", "room": "Bathroom", "size": "medium" }
+{ "command": "request", "id": "Sleepover", "start": "2019-03-26", "end": "2019-03-28", "small": 1, "medium": 1, "large": 10 }
+// Large numbers Fail Case
+{ "command": "request", "id": "Robbery", "start": "2019-03-26", "end": "2019-03-26", "small": 5111, "medium": 555, "large": 12345 }
+// Off by 1 large room "Raid Request"
+{ "command": "request", "id": "Raid", "start": "2019-03-30", "end": "2019-03-30", "small": 1, "medium": 1, "large": 11 }
+{ "command": "list", "venue": "House" }
+{ "command": "cancel", "id": "Sleepover" }
+// Should have enough rooms for "Raid Request"
+{ "command": "room", "venue": "House", "room": "Bathroom2", "size": "large" }
+{ "command": "request", "id": "Raid", "start": "2019-03-30", "end": "2019-03-30", "small": 1, "medium": 1, "large": 11 }
+{ "command": "list", "venue": "House" }
