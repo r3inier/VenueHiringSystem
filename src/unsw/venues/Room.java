@@ -54,10 +54,10 @@ public class Room {
     public int checkAvailRes(LocalDate start, LocalDate end, ReservationRequest resRequest, int counter, Reservation newRes) {
         for (Reservation resCheck : this.getReservedList()) {
             if (
-                (resCheck.getStartDate().compareTo(start) >= 0 && resCheck.getStartDate().compareTo(end) <= 0) || 
+                ((resCheck.getStartDate().compareTo(start) >= 0 && resCheck.getStartDate().compareTo(end) <= 0) || 
                 (resCheck.getEndDate().compareTo(start) >= 0 && resCheck.getEndDate().compareTo(end) <= 0) ||
-                (resCheck.getStartDate().compareTo(start) <= 0 && resCheck.getEndDate().compareTo(end) >= 0) ||
-                (resCheck.getID().equals(resRequest.getID()) == true)
+                (resCheck.getStartDate().compareTo(start) <= 0 && resCheck.getEndDate().compareTo(end) >= 0)) &&
+                (resCheck.getID().equals(resRequest.getID()) == false)
             ) {
                 return counter;
             }
