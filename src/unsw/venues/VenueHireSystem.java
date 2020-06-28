@@ -145,8 +145,6 @@ public class VenueHireSystem {
             
             // Checks if all rooms were successfully assigned
             if (bufferReservationList.isEmpty() == false) {
-                result.put("venue", vCheck.getVenueName());
-                result.put("status", "success");
                 JSONArray rooms = new JSONArray();
                 // Adds rooms into the JSONArray
                 for (Reservation rsve: bufferReservationList) {
@@ -154,10 +152,11 @@ public class VenueHireSystem {
                 }
                 // Adds the reservations in respective rooms
                 for (Reservation r: bufferReservationList) {
-                    System.out.println(r.getID());
                     r.getRoom().addReservation(r);
                 }
+                result.put("venue", vCheck.getVenueName());
                 result.put("rooms", rooms);
+                result.put("status", "success");
                 return result;
             }
         }

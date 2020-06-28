@@ -1,6 +1,7 @@
 package unsw.venues;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.time.LocalDate;
 import org.json.JSONArray;
 
@@ -30,6 +31,16 @@ public class Room {
 
     public ArrayList<Reservation> getReservedList() {
         return reservedList;
+    }
+
+    public JSONArray getJSONReservedList() {
+        JSONArray resList = new JSONArray();
+        this.sortList();
+        for (Reservation r : this.getReservedList()) {
+            resList.put(r.getJSONResDetails());
+        }
+
+        return resList;
     }
 
     public void addReservation(Reservation r) {
@@ -65,6 +76,10 @@ public class Room {
         }
 
         return resList;
+    }
+
+    public void sortList() {
+        Collections.sort(this.reservedList, (a, b) -> a.getStartDate().compareTo(b.getStartDate()));
     }
 
 }

@@ -45,5 +45,13 @@ public class Reservation {
         return result;
     }
 
+    public JSONObject getJSONResDetails() {
+        JSONObject result = new JSONObject();
+        result.put("start", this.getStartDate());
+        result.put("end", this.getEndDate());
+        result.put("id", this.getID());
+        return result;
+    }
+
 
 }

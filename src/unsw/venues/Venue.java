@@ -3,6 +3,7 @@ package unsw.venues;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import org.json.JSONObject;
+import org.json.JSONArray;
 
 
 
@@ -124,12 +125,14 @@ public class Venue {
     }
 
     public void loadRooms() {
-        JSONObject result = new JSONObject();
+        JSONArray result = new JSONArray();
         for (Room r : this.getRoomList()) {
-            result.put("reservations", r.loadReservedList());
-            result.put("room", r.getRoomName());
-            System.out.println(result.toString(2));
+            JSONObject roomObj = new JSONObject();
+            roomObj.put("reservations", r.getJSONReservedList());
+            roomObj.put("room", r.getRoomName());
+            result.put(roomObj);
         }
+        System.out.println(result.toString(2));
     }
     
     
