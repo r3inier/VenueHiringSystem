@@ -70,15 +70,6 @@ public class Room {
         this.reservedList.removeIf(a -> a.getID().equals(id) == true);
     }
 
-    public JSONArray loadReservedList() {
-        JSONArray resList = new JSONArray();
-        for (Reservation res : this.reservedList) {
-            resList.put(res.resInfo());
-        }
-
-        return resList;
-    }
-
     public void sortList() {
         if (this.reservedList.size() > 1) {
             Collections.sort(this.reservedList, (a, b) -> a.getStartDate().compareTo(b.getStartDate()));
