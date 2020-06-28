@@ -73,6 +73,7 @@ public class Room {
         JSONArray resList = new JSONArray();
         for (Reservation res : this.reservedList) {
             resList.put(res.resInfo());
+            resList.put(res.getRoom());
         }
 
         return resList;
