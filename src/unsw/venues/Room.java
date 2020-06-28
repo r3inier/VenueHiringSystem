@@ -57,7 +57,7 @@ public class Room {
                 ((resCheck.getStartDate().compareTo(start) >= 0 && resCheck.getStartDate().compareTo(end) <= 0) || 
                 (resCheck.getEndDate().compareTo(start) >= 0 && resCheck.getEndDate().compareTo(end) <= 0) ||
                 (resCheck.getStartDate().compareTo(start) <= 0 && resCheck.getEndDate().compareTo(end) >= 0)) &&
-                (resCheck.getID().equals(resRequest.getID()) == false)
+                /* this is for change check case */(resCheck.getID().equals(resRequest.getID()) == false)
             ) {
                 return counter;
             }
